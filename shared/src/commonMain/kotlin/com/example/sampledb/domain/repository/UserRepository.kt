@@ -5,5 +5,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface UserRepository {
     fun getUsers(): Flow<List<User>>
-    suspend fun refreshUsers() // Forces network sync
+
+    suspend fun refreshIfEmpty()
+    suspend fun refreshUsers()
 }

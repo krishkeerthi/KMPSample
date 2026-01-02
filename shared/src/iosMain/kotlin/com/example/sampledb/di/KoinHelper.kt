@@ -1,11 +1,9 @@
 package com.example.sampledb.di
 
-import org.koin.core.component.KoinComponent
-import com.example.sampledb.domain.usecase.GetUsersUseCase
 import com.example.sampledb.domain.repository.UserRepository
-import org.koin.core.component.get
+import com.example.sampledb.domain.usecase.GetUsersUseCase
+import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
-
 
 
 class KoinHelper : KoinComponent {
